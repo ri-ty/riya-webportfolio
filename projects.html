@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <style>
+    body {
+      background-color: #ffdee9;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin: 60px 0 80px;
+      text-transform: uppercase;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 80px;
+      padding-bottom: 100px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 450px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background-color: #ffc0cb; /* light pink card */
+      color: white;
+      border: 3px solid white;
+      backface-visibility: hidden;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .flip-card-front {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      text-align: left;
+      font-size: 14.5px;
+      line-height: 1.5;
+      overflow-y: auto;
+    }
+
+    .project-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .github-link {
+      margin-top: 15px;
+      font-style: italic;
+      color: #fff;
+      text-decoration: underline;
+      display: inline-block;
+    }
+
+    @media (max-width: 960px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PROJECTS</h1>
+
+  <div class="cards-container">
+
+    <!-- Project 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">🔐 Ransomware Detection Using AI</div>
+        <div class="flip-card-back">
+          <div class="project-title">🔐 Ransomware Detection Using AI</div>
+          <p><strong>Tech Stack:</strong> Python, Oracle Virtual Machine</p>
+          <p>Developed an AI-powered tool to detect and block ransomware activity using intelligent pattern recognition.</p>
+          <p>Project built with a 6-member team under Cipher’s Club.</p>
+          <a href="#" class="github-link">🔗 GitHub Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">🎬 Movie Recommendation System</div>
+        <div class="flip-card-back">
+          <div class="project-title">🎬 Movie Recommendation System</div>
+          <p><strong>Tech Stack:</strong> Python, Pandas, NumPy</p>
+          <p>Built a recommendation engine using collaborative filtering to predict user preferences from behavior and rating datasets.</p>
+          <a href="#" class="github-link">🔗 GitHub Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">🌱 Sustainable Fertilizer Usage System</div>
+        <div class="flip-card-back">
+          <div class="project-title">🌱 Sustainable Fertilizer Usage System – Kheti Badi</div>
+          <p><strong>Tech Stack:</strong> Python, React, Mozilla APIs, Kaggle Datasets</p>
+          <p>Designed a web app to recommend optimal fertilizers based on crop and soil data, promoting sustainable agriculture using machine learning.</p>
+          <a href="#" class="github-link">🔗 GitHub Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">🎮 Simple Minds – Game Website</div>
+        <div class="flip-card-back">
+          <div class="project-title">🎮 Simple Minds – Java-Based Game Website</div>
+          <p><strong>Tech Stack:</strong> Java, Java Swing, HTML, CSS, JavaScript</p>
+          <p>Created an interactive site hosting 3 mini-games:</p>
+          <ul>
+            <li>🧠 Sudoku: Boosts logic and memory</li>
+            <li>🐦 Flappy Bird: Tests reflexes</li>
+            <li>🌌 Space Pinball: Classic arcade experience</li>
+          </ul>
+          <p>Aimed at improving coding skills through real-time gameplay.</p>
+          <a href="#" class="github-link">🔗 GitHub Link</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

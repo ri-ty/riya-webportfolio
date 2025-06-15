@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riya Tyagi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🌍 Splash Screen -->
+  <div id="splash">
+    <div class="hello-grid" id="hello-grid"></div>
+  </div>
+
+  <!-- 🍔 Hamburger Menu -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav id="menu">
+    <a href="about.html">About Me</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <!-- 👤 Contact Popup -->
+  <div id="contact-popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h3>Contact Me</h3>
+      <p>Email: <a href="mailto:riyatyagi20007@gmail.com">riyatyagi20007@gmail.com</a></p>
+      <p>Phone: +91-9520103497</p>
+    </div>
+  </div>
+
+  <!-- 👋 Hero Section -->
+  <main class="center-hero">
+    <img src="CENTER.png" alt="Riya Tyagi" class="center-photo" />
+    <p id="typewriter-text"></p>
+  </main>
+
+  <!-- 🔗 Top Right Icons -->
+  <div class="top-icons">
+    <a href="https://www.linkedin.com/in/riya-tyagi-549869327/" target="_blank" title="LinkedIn">
+      <img src="linkdeln.png" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/your-github-id" target="_blank" title="GitHub">
+      <img src="github.png" alt="GitHub" />
+    </a>
+    <button onclick="openPopup()" title="Contact Me">
+      <img src="contactme.jpg" alt="Contact" />
+    </button>
+    <a href="Riya Tyagi resume (1).pdf" target="_blank" title="View Resume">
+      <img src="CV.jpeg" alt="Resume" />
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

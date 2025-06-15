@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills</title>
+  <style>
+    body {
+      background-color: #ffdee9; /* light pink background */
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin: 60px 0 80px; /* extra top margin */
+      text-transform: uppercase;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 80px; /* shift cards down */
+      padding-bottom: 100px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 400px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background-color: #ffc0cb; /* light pink cards */
+      color: white;
+      border: 3px solid white;
+      backface-visibility: hidden;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .flip-card-front {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-y: auto;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 960px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>MORE LOADING...</h1>
+
+  <div class="cards-container">
+    <!-- Skills Card -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          Skills
+        </div>
+        <div class="flip-card-back">
+          <ul>
+            <li><strong>Programming Languages:</strong> Python, Java</li>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React</li>
+            <li><strong>Database:</strong> MySQL</li>
+            <li><strong>Tools & Tech:</strong> Oracle Virtual Machine, Java Swing, Mozilla APIs</li>
+            <li><strong>Other Skills:</strong> UI/UX Design, Data Analysis (Pandas, NumPy)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements Card -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          Achievements
+        </div>
+        <div class="flip-card-back">
+          <ul>
+            <li>Smart India Hackathon (SIH) 2023: Secured 81st rank nationwide</li>
+            <li>BU MUN (Bennett University Model United Nations): Participant</li>
+            <li>Internship – Tare Zameen Foundation: Contributed to design and creative work</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Positions of Responsibility Card -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          Positions of Responsibility
+        </div>
+        <div class="flip-card-back">
+          <ul>
+            <li>Cipher’s Club – Multimedia Team Member</li>
+            <li>IEEE Student Chapter – Tech Team Member</li>
+            <li>Financo Club – Subhead, Management Team</li>
+            <li>Sparks Club – Member, Clubs & Relations Team</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
